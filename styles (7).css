@@ -1,0 +1,97 @@
+body {
+    background-color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 30px auto;
+}
+
+/* Line above the title */
+.container::before {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 1px;
+    background-color: #87ceeb;
+    margin: 0 auto 20px;
+}
+
+/* Title */
+h1 {
+    font-family: cursive;
+    color: skyblue;
+    font-size: 40px;
+    margin: 0 0 8px;
+}
+
+/* Singer */
+h2 {
+    font-family: Arial, sans-serif;
+    color: skyblue;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0 0 25px;
+}
+    /* Line below singer */
+
+.container::after {
+
+    content: "";
+
+    display: block;
+
+    width: 80%;
+
+    height: 2px;
+
+    background-color: skyblue;
+
+    margin: 20px auto 25px;
+}
+/* Image */
+img {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto 25px;
+}
+
+/* Lyrics area */
+.lyrics-box {
+    width: 70%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+/* Lyrics title */
+h3 {
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+/* Verse and Chorus labels */
+.verse,
+.chorus {
+    margin-bottom: 30px;
+}
+
+.verse h4,
+.chorus h4 {
+    font-family: Arial, sans-serif;
+    color: skyblue;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+/* Actual lyrics */
+.lyrics {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0;
+}
